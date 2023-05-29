@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/WROaMw-800.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    opacity: 0; /* Initially hidden */
+    animation: fade-in 5s ease forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Initial position */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Final position */
+    }
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: #142474;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(74, 82, 156, 0.3);
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.images img {
+    width: 30%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 20px;
+    color: #555555;
+    line-height: 1.5;
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-icons a {
+    color: #555555;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #1da1f2;
+}
+
+@media screen and (max-width: 600px) {
+    .images {
+        flex-direction: column;
+    }
+
+    .images img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
