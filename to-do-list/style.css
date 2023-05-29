@@ -1,0 +1,170 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Set styles for the container */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+}
+
+/* Styles for the To-Do App section */
+.To-Do-App {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+/* Styles for the heading in the To-Do App section */
+.To-Do-App h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Styles for the image within the heading */
+.To-Do-App h2 img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+/* Styles for the rows in the list */
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for rows */
+.row:hover {
+    background-color: #ccc;
+}
+
+/* Styles for the input field */
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+}
+
+/* Input field focus effect */
+input:focus {
+    border-color: #ff5945;
+}
+
+/* Styles for the button */
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #ff4520;
+}
+
+/* Styles for the list items */
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for list items */
+ul li:hover {
+    color: #ff5945;
+}
+
+/* Styles for the bullet icon */
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/352-3529422_circle-shape-transparent-png-transparent-white-circle-icon.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 0px;
+    transition: background-image 0.3s ease;
+}
+
+/* Hover effect for the bullet icon */
+ul li:hover::before {
+    background-image: url(images/green-check-mark-icon-in-round-shape-design-png.webp);
+}
+
+/* Styles for checked list items */
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+    transition: color 0.3s ease;
+}
+
+/* Styles for the delete button */
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the delete button */
+ul li span:hover {
+    background: #edeef0;
+    transition: background-color 0.3s ease;
+}
+
+/* Animation for adding new list items */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to list items */
+ul li {
+    animation: fade-in 0.3s ease forwards;
+}
