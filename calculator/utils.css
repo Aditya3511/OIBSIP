@@ -1,0 +1,27 @@
+.text-center{
+    text-align: center;
+    color:rgb(255, 0, 8);
+    font-style: italic;
+}
+.bg-red{
+    background:rgb(202, 34, 34);
+}
+.mx-auto{
+    margin: auto;
+}
+.flex{
+    display: flex;
+}
+.flex-col{
+    flex-direction: column;
+}
+.item-center{
+    align-items: center;
+}
+
+.container{
+     border: solid black;
+    width: fit-content;
+    border-radius: 0.5pc;
+    background-color: rgb(161, 161, 79);
+}
